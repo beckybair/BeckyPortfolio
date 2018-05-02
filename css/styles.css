@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -8,81 +8,101 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 img,
 embed,
 object,
 video {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 a {
-  color: #7a656a;
+    color: #7a656a;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #463a3d;
+    color: #463a3d;
 }
 
 .jumbotron {
-  background: #ffffff url('../img/header-bg.jpg') no-repeat right top;
-  width: 100%;
-  background-size: cover;
-  color: white;
+    background: #ffffff url('../img/header-bg.jpg') no-repeat right top;
+    width: 100%;
+    background-size: cover;
+    color: white;
 }
 
 .shaded {
-  background-color: rgba(47, 44, 49, 0.349);
-  border-radius: 10px;
-  padding: 10px;
+    background-color: rgba(47, 44, 49, 0.349);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .card {
-  border-radius: 10px;
+    border-radius: 10px;
+}
+
+.skills {
+    border: none;
+    padding-bottom: 0;
 }
 
 footer {
-  padding: 25px 0;
-  text-align: center;
+    padding: 25px 0;
+    text-align: center;
 }
 
 footer span.copyright {
-  line-height: 40px;
-  text-transform: uppercase;
-  text-transform: none;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none;
 }
 
 footer ul.quicklinks {
-  margin-bottom: 0;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-transform: none;
+    margin-bottom: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none;
 }
 
 ul.social-buttons {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 ul.social-buttons li a {
-  display: block;
-  background-color: #7a656a;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  font-size: 20px;
-  line-height: 40px;
-  color: white;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+    display: block;
+    background-color: #7a656a;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) {
+    .card-deck .card {
+        flex-basis: 66.6%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-deck .card {
+        flex-basis: 10%;
+    }
 }
